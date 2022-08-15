@@ -2,4 +2,3 @@ numpy
 tensorflow_hub
 fastapi
 uvicorn
-tensorflow==2.6.0
