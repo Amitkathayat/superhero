@@ -28,5 +28,5 @@ async def predict_api(ip:str):
     return {'prediction': top5_res}
 
 
-# if __name__ == '__main__':
-#     uvicorn.run(app, host='127.0.0.1', port=4000, debug=True
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=4000, debug=True)
