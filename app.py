@@ -19,12 +19,12 @@ async def home():
     return "<h2>Search your hero</h2>"
 
 
-@app.get("/predict")
+@app.post("/predict")
 async def predict_api(ip:str):
     ip_em = model([ip]).numpy()
     all_dist = (desc_lod @ ip_em.T )
     top5 = all_dist.flatten().argsort()[-5:]
-    top5_res = (nm_lod[top5])
+    top5_res = str(nm_lod[top5])
     return {'prediction': top5_res}
 
 
