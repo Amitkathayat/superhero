@@ -1,5 +1,5 @@
-numpy
-tensorflow_hub
+pandas
+nltk
+stop_words
 fastapi
 uvicorn
-tensorflow==2.6.0
