@@ -11,6 +11,7 @@ from nltk.stem import WordNetLemmatizer
 
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 
 Dframe1=pd.read_csv('nm_desc.csv')
 
