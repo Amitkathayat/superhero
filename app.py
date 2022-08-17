@@ -66,7 +66,7 @@ async def predict_api(ip:str):
     top5=''
     for k,i in enumerate( args[::-1]):
         top5+=(str(k+1) + '. ' + Dframe1['name'][i] + " ")
-    return {'prediction': top5}
+    return {'Top 5 results': top5}
 
 
 if __name__ == '__main__':
