@@ -49,7 +49,7 @@ async def home():
     return "<h2>Search your hero</h2>"
 
 
-@app.post("/predict")
+@app.get("/predict")
 async def predict_api(ip:str):
     ip_tok = set(Token_new1(ip))
     i = 0
