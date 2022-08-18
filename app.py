@@ -16,7 +16,7 @@ nltk.download('omw-1.4')
 
 Dframe1=pd.read_csv('nm_desc.csv')
 
-
+# cleaning data
 def cleaning1(inpdata):
     cleanedArticle1=re.sub(r'[?|$|(),"".@#=><|!]Â&*/',r' ',inpdata)
     cleanedArticle2=re.sub(r'[^a-z A-Z]',r' ',cleanedArticle1)
